@@ -3,12 +3,3 @@ I contributed primarily to feature engineering and model development. I worked o
 I advocated for using XGBoost as the final model due to its strong ability to handle nonlinear relationships and class imbalance. Given our dataset had significantly more non-churners than churners, XGBoost’s scale_pos_weight parameter allowed us to better account for imbalance while maintaining high predictive performance.
 One key lesson was the importance of thoughtful feature engineering. Aggregating services and add-ons into counts provided clearer predictive signals than treating each service independently.
 
-If given more time, I would explore:
-
-Additional hyperparameter tuning
-
-Cross-validation beyond a single train-test split
-
-Testing ensemble stacking techniques
-
-Performing drift simulation to evaluate long-term stability
