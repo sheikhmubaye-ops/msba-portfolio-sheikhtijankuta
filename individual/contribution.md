@@ -1,5 +1,20 @@
-Final version-strong interview style
-I contributed primarily to feature engineering and model development. I worked on handling null values appropriately, creating engineered features such as referral thresholds and service counts, and testing multiple models. I also contributed to tuning the XGBoost model and evaluating performance using ROC-AUC
-I advocated for using XGBoost as the final model due to its strong ability to handle nonlinear relationships and class imbalance. Given our dataset had significantly more non-churners than churners, XGBoost’s scale_pos_weight parameter allowed us to better account for imbalance while maintaining high predictive performance.
-One key lesson was the importance of thoughtful feature engineering. Aggregating services and add-ons into counts provided clearer predictive signals than treating each service independently.
+# Individual Contribution – Sheikh Tijan Kuta
+
+## What I Contributed Most To
+
+I contributed most to feature engineering and model evaluation.  
+I helped design aggregated features such as number_of_services, number_of_addons, and referral flags to improve predictive power and business interpretability. I also focused on evaluating model performance using ROC-AUC and ensuring we properly handled class imbalance.
+
+## One Decision I Personally Advocated For
+
+I advocated for using XGBoost instead of relying only on logistic regression.  
+My reasoning was that churn behavior is often nonlinear and influenced by interactions between contract type, tenure, and service usage. XGBoost allowed us to model these interactions while also handling class imbalance using scale_pos_weight.
+
+## Lessons Learned & What I Would Improve
+
+One key lesson was the importance of early-tenure customers as a high-risk segment. If we had more time, I would:
+
+- Conduct a more structured A/B test simulation for retention incentives  
+- Explore probability calibration to ensure predicted churn risk aligns with real-world percentages  
+- Perform cost-benefit modeling to estimate ROI of retention offers  
 
