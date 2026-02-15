@@ -1,1 +1,2 @@
 # msba-portfolio-sheikhtijankuta
+TruSource faces customer churn, which directly impacts profitability. Since retaining existing customers is more cost-effective than acquiring new ones, our objective was to predict which customers are most likely to churn and provide actionable business recommendations to improve retention.Using historical customer data, we built a supervised classification model to identify high-risk customers and uncover key drivers of churn.
